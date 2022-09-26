@@ -51,8 +51,9 @@ const UpdateForm = ({ single, Function }) => {
 
   return (
     <div>
-      <h1>Update Form</h1>
-      <label>Userid</label>
+      <h1 align="center" >Update Form</h1>
+      <h4 align="center">
+      <label >Userid</label>
       <input
         type="Userid"
         placeholder="Userid"
@@ -78,7 +79,7 @@ const UpdateForm = ({ single, Function }) => {
 
       <label>MoNum</label>
       <input
-        type="MoNum"
+        type="Number"
         placeholder="MoNum"
         defaultValue={MoNum}
         onChange={(e) => setMoNum(e.target.value)}
@@ -102,6 +103,8 @@ const UpdateForm = ({ single, Function }) => {
       <button type="button" onClick={() => UpdateData()}>
         Update
       </button>
+      </h4>
+      <hr />
     </div>
   );
 };

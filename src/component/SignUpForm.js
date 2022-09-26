@@ -46,9 +46,10 @@ const SingUp = () => {
 
   return (
     <div>
-      <h1>Sign Up Form</h1>
+      <h1 align="center">Sign Up Form</h1>
       <form method="POST">
-        <h3>Userid</h3>
+        <h4 align="center">
+        <label>Userid</label>
         <input
           type="Userid"
           name="Userid"
@@ -58,7 +59,7 @@ const SingUp = () => {
           onChange={handleInputs}
         />
 
-        <h3>Fname</h3>
+        <label>Fname</label>
         <input
           type="Fname"
           name="Fname"
@@ -68,7 +69,7 @@ const SingUp = () => {
           onChange={handleInputs}
         />
 
-        <h3>Lname</h3>
+        <label>Lname</label>
         <input
           type="Lname"
           name="Lname"
@@ -78,9 +79,9 @@ const SingUp = () => {
           onChange={handleInputs}
         />
 
-        <h3>MoNum</h3>
+        <label>MoNum</label>
         <input
-          type="MoNum"
+          type="Number"
           name="MoNum"
           placeholder="MoNum"
           id="MoNum"
@@ -88,7 +89,7 @@ const SingUp = () => {
           onChange={handleInputs}
         />
 
-        <h3>country</h3>
+        <label>country</label>
         <input
           type="country"
           name="country"
@@ -98,7 +99,7 @@ const SingUp = () => {
           onChange={handleInputs}
         />
 
-        <h3>Password</h3>
+        <label>Password</label>
         <input
           type="Password"
           name="Password"
@@ -110,8 +111,10 @@ const SingUp = () => {
 
         <button onClick={PostData}>Submit</button>
         {/* <button onClick={DataList}>Submit In List</button> */}
+      </h4>
       </form>
       <button onClick={() => LogOut()}>LogOut</button>
+      <hr />
       <GetData />
     </div>
   );

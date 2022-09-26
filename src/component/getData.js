@@ -82,8 +82,6 @@ const GetData = () => {
         <tbody>{arr}</tbody>
       </table>
 
-      <hr />
-      <hr />
     </div>
   );
 };
