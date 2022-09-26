@@ -26,7 +26,7 @@ const SingUp = () => {
 
   const PostData = async (e) => {
     e.preventDefault();
-
+    
     const { Userid, Fname, Lname, MoNum, country, Password } = user;
 
     axios.post("http://localhost:4000/enterData/register", {

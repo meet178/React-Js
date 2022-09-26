@@ -1,0 +1,1 @@
+what should redux do ?? - help to managment a state
