@@ -7,11 +7,11 @@ const SingUp = () => {
   const Move_to = useNavigate();
 
   const [user, setUser] = useState({
-    Userid: "",
-    Fname: "",
-    Lname: "",
-    MoNum: "",
-    country: "",
+    Userid  : "",
+    Fname   : "",
+    Lname   : "",
+    MoNum   : "",
+    country : "",
     Password: "",
   });
 
@@ -49,7 +49,7 @@ const SingUp = () => {
       <h1 align="center">Sign Up Form</h1>
       <form method="POST">
         <h4 align="center">
-        <label>Userid</label>
+        <label><h3> Userid</h3></label>
         <input
           type="Userid"
           name="Userid"
@@ -59,7 +59,7 @@ const SingUp = () => {
           onChange={handleInputs}
         />
 
-        <label>Fname</label>
+        <label><h3>Fname</h3></label>
         <input
           type="Fname"
           name="Fname"
@@ -69,7 +69,7 @@ const SingUp = () => {
           onChange={handleInputs}
         />
 
-        <label>Lname</label>
+        <label><h3>Lname</h3></label>
         <input
           type="Lname"
           name="Lname"
@@ -79,7 +79,7 @@ const SingUp = () => {
           onChange={handleInputs}
         />
 
-        <label>MoNum</label>
+        <label><h3>MoNum</h3></label>
         <input
           type="Number"
           name="MoNum"
@@ -89,7 +89,7 @@ const SingUp = () => {
           onChange={handleInputs}
         />
 
-        <label>country</label>
+        <label><h3>country</h3></label>
         <input
           type="country"
           name="country"
@@ -99,7 +99,7 @@ const SingUp = () => {
           onChange={handleInputs}
         />
 
-        <label>Password</label>
+        <label><h3>Password</h3></label>
         <input
           type="Password"
           name="Password"
@@ -113,7 +113,9 @@ const SingUp = () => {
         {/* <button onClick={DataList}>Submit In List</button> */}
       </h4>
       </form>
-      <button onClick={() => LogOut()}>LogOut</button>
+      <div align="center">
+        <button onClick={() => LogOut()}>LogOut</button>
+      </div>
       <hr />
       <GetData />
     </div>

@@ -25,7 +25,7 @@ const UpdateForm = ({ single, Function }) => {
         setCountry(res.data.country);
         setPassword(res.data.Password);
       });
-  }, [single, Function]);
+  }, [single]);
 
   const UpdateData = (e) => {
     let user = localStorage.getItem("token");
