@@ -43,10 +43,11 @@ const LoginForm = () => {
 
   return (
     <div>
-      <h1>Login Form</h1>
+      <h1 align="center">Login Form</h1>
       <label>
-        <h3> User Id </h3>
+        <h3 align="center"> User Id </h3>
       </label>
+      <h3 align="center">
       <input
         type="Userid"
         id="Userid"
@@ -55,10 +56,12 @@ const LoginForm = () => {
         defaultValue={data.Userid}
         onChange={(e) => ChangeValue(e)}
       />
+      </h3>
 
       <label>
-        <h3 id="h3"> Password </h3>
+        <h3 align="center"> Password </h3>
       </label>
+      <h3 align="center">
       <input
         type="Password"
         id="Password"
@@ -66,9 +69,12 @@ const LoginForm = () => {
         placeholder="Enter Your Password"
         defaultValue={data.Password}
         onChange={(e) => ChangeValue(e)}
-      />
+        />
+        </h3>
+        <div align="center">
+            <button onClick={() => LoginData()} id="button">Login</button>
+        </div>
 
-      <button onClick={() => LoginData()}>Login</button>
     </div>
   );
 };

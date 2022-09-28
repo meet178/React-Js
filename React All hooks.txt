@@ -10,8 +10,12 @@ useRef = useRef change color,value,focus And other some thing
 forwardRef = forwardRef works like props and useRef
 useLayoutEffect = useLayoutEffect run the code before data is updated in output
 
+<<<<<<< HEAD
 useSelector = useSelector Read value from store state and sbscribes to update  + We can read data from the store with useSelector
 			
+=======
+useSelector = useSelector Read value from store state and sbscribes to update + We can read data from the store with useSelector.
+>>>>>>> 7ed827e7c2efb2db486a3ff14ff71120301f3521
 useDispatch = useDispatch return store despatch method to dispatch action
 		  (dispatch action mate useDispatch mathi dispatch method return kare chhe)
 
