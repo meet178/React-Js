@@ -72,7 +72,7 @@ const LoginForm = () => {
         />
         </h3>
         <div align="center">
-            <button onClick={() => LoginData()} id="button">Login</button>
+            <button onClick={() => LoginData()} id="button" >Login</button>
         </div>
 
     </div>
