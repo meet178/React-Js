@@ -14,14 +14,13 @@ const LoginForm = () => {
     let Userid = "Userid";
     if (e.target.id === Userid) {
       setData({ ...data, Userid: e.target.value });
-      //  this.setState({color: "blue"});
+      //  this.setState({color: "blue"});    
     } else {
       setData({ ...data, Password: e.target.value });
     }
   };
 
   const LoginData = () => {
-    console.log("hello");
     const { Userid, Password } = data;
 
     axios
@@ -72,7 +71,7 @@ const LoginForm = () => {
         />
         </h3>
         <div align="center">
-            <button onClick={() => LoginData()} id="button" >Login</button>
+            <button onClick={() => LoginData()} >Login</button>
         </div>
 
     </div>
