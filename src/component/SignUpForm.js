@@ -50,6 +50,7 @@ const SingUp = () => {
       <form method="POST">
         <h4 align="center">
         <label><h3> Userid</h3></label>
+        <br />
         <input
           type="Userid"
           name="Userid"
@@ -58,8 +59,12 @@ const SingUp = () => {
           value={user.Userid}
           onChange={handleInputs}
         />
+        <br />
 
+        <br />
         <label><h3>Fname</h3></label>
+        <br />
+
         <input
           type="Fname"
           name="Fname"
@@ -68,8 +73,12 @@ const SingUp = () => {
           value={user.Fname}
           onChange={handleInputs}
         />
+        <br />
 
+        <br />
         <label><h3>Lname</h3></label>
+        <br />
+
         <input
           type="Lname"
           name="Lname"
@@ -78,8 +87,11 @@ const SingUp = () => {
           value={user.Lname}
           onChange={handleInputs}
         />
+        <br />
 
+        <br />
         <label><h3>MoNum</h3></label>
+        <br />
         <input
           type="Number"
           name="MoNum"
@@ -88,8 +100,11 @@ const SingUp = () => {
           value={user.MoNum}
           onChange={handleInputs}
         />
+        <br />
 
+        <br />
         <label><h3>country</h3></label>
+        <br />
         <input
           type="country"
           name="country"
@@ -98,8 +113,11 @@ const SingUp = () => {
           value={user.country}
           onChange={handleInputs}
         />
+        <br />
 
+        <br />
         <label><h3>Password</h3></label>
+        <br />
         <input
           type="Password"
           name="Password"
@@ -108,13 +126,14 @@ const SingUp = () => {
           value={user.Password}
           onChange={handleInputs}
         />
-
-        <button onClick={PostData}>Submit</button>
+        <br />
+        <br />
+        <button onClick={PostData} className="btn btn-primary"><h6>Submit</h6></button>
         {/* <button onClick={DataList}>Submit In List</button> */}
       </h4>
       </form>
       <div align="center">
-        <button onClick={() => LogOut()}>LogOut</button>
+        <button onClick={() => LogOut()} className="btn btn-primary"><h6>LogOut</h6></button>
       </div>
       <hr />
       <GetData />

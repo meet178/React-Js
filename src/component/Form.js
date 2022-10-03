@@ -92,6 +92,7 @@ const UpdateForm = ({ single, Function }) => {
         defaultValue={country}
         onChange={(e) => setCountry(e.target.value)}
       />
+      <br />
 
       <label>Password</label>
       <input
@@ -100,8 +101,11 @@ const UpdateForm = ({ single, Function }) => {
         defaultValue={Password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button type="button" onClick={() => UpdateData()}>
-        Update
+
+      <br />
+      <br />
+      <button type="button" onClick={() => UpdateData()} className="btn btn-primary">
+        <h6>Update</h6>
       </button>
       </h4>
       <hr />

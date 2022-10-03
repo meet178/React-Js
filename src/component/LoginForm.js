@@ -38,13 +38,14 @@ const LoginForm = () => {
           alert("Pls Check Your ID Or Password");
         }
       });
+      
   };
 
   return (
     <div>
       <h1 align="center">Login Form</h1>
       <label>
-        <h3 align="center"> User Id </h3>
+        <h3 align="center" > User Id </h3>
       </label>
       <h3 align="center">
       <input
@@ -71,7 +72,7 @@ const LoginForm = () => {
         />
         </h3>
         <div align="center">
-            <button onClick={() => LoginData()} >Login</button>
+            <button onClick={() => LoginData()} className="btn btn-primary">Login</button>
         </div>
 
     </div>
