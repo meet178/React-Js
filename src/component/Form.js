@@ -52,40 +52,55 @@ const UpdateForm = ({ single, Function }) => {
   return (
     <div>
       <h1 align="center" >Update Form</h1>
+      <br />
       <h4 align="center">
+      <br />
       <label >Userid</label>
+      <br />
       <input
         type="Userid"
         placeholder="Userid"
         defaultValue={Userid}
         onChange={(e) => setUserid(e.target.value)}
       />
+      <br />
 
+      <br />
       <label>Fname</label>
+      <br />
       <input
         type="Fname"
         placeholder="Fname"
         defaultValue={Fname}
         onChange={(e) => setFname(e.target.value)}
       />
+      <br />
 
+      <br />
       <label>Lname</label>
+      <br />
       <input
         type="Lname"
         placeholder="Lname"
         defaultValue={Lname}
         onChange={(e) => setLname(e.target.value)}
       />
+      <br />
 
+      <br />
       <label>MoNum</label>
+      <br />
       <input
         type="Number"
         placeholder="MoNum"
         defaultValue={MoNum}
         onChange={(e) => setMoNum(e.target.value)}
       />
+      <br />
 
+      <br />
       <label>country</label>
+      <br />
       <input
         type="country"
         placeholder="country"
@@ -94,13 +109,16 @@ const UpdateForm = ({ single, Function }) => {
       />
       <br />
 
+      <br />
       <label>Password</label>
+      <br />
       <input
         type="Password"
         placeholder="Password"
         defaultValue={Password}
         onChange={(e) => setPassword(e.target.value)}
       />
+      <br />
 
       <br />
       <br />
