@@ -46,11 +46,13 @@ const SingUp = () => {
 
   return (
     <div>
-      <h1 align="center">Sign Up Form</h1>
+      <h1 align="center"><b>Sign Up Form</b></h1>
       <form method="POST">
         <h4 align="center">
-        <label><h3> Userid</h3></label>
         <br />
+        <label><h3> <b>Userid</b></h3></label>
+        <br />
+        
         <input
           type="Userid"
           name="Userid"
@@ -62,7 +64,7 @@ const SingUp = () => {
         <br />
 
         <br />
-        <label><h3>Fname</h3></label>
+        <label><h3><b>Fname</b></h3></label>
         <br />
 
         <input
@@ -76,7 +78,7 @@ const SingUp = () => {
         <br />
 
         <br />
-        <label><h3>Lname</h3></label>
+        <label><h3><b>Lname</b></h3></label>
         <br />
 
         <input
@@ -90,7 +92,7 @@ const SingUp = () => {
         <br />
 
         <br />
-        <label><h3>MoNum</h3></label>
+        <label><h3><b>MoNum</b></h3></label>
         <br />
         <input
           type="Number"
@@ -103,7 +105,7 @@ const SingUp = () => {
         <br />
 
         <br />
-        <label><h3>country</h3></label>
+        <label><h3><b>Country</b></h3></label>
         <br />
         <input
           type="country"
@@ -116,7 +118,7 @@ const SingUp = () => {
         <br />
 
         <br />
-        <label><h3>Password</h3></label>
+        <label><h3><b>Password</b></h3></label>
         <br />
         <input
           type="Password"
@@ -128,12 +130,12 @@ const SingUp = () => {
         />
         <br />
         <br />
-        <button onClick={PostData} className="btn btn-primary"><h6>Submit</h6></button>
+        <button onClick={PostData} className="btn btn-primary"><h6><b>Submit</b></h6></button>
         {/* <button onClick={DataList}>Submit In List</button> */}
       </h4>
       </form>
       <div align="center">
-        <button onClick={() => LogOut()} className="btn btn-primary"><h6>LogOut</h6></button>
+        <button onClick={() => LogOut()} className="btn btn-primary"><h6><b>LogOut</b></h6></button>
       </div>
       <hr />
       <GetData />

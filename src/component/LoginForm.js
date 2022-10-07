@@ -43,10 +43,14 @@ const LoginForm = () => {
 
   return (
     <div>
-      <h1 align="center">Login Form</h1>
-      <label>
-        <h3 align="center" > User Id </h3>
-      </label>
+      <br /><br /><br /><br /><br /><br /><br /><br /> 
+      <h1 align="center"><b>Login Form</b></h1>
+        <h4 align="center">
+        <br />
+      <label><h3> <b>Userid</b></h3></label>
+      <br />
+
+      <br />
       <h3 align="center">
       <input
         type="Userid"
@@ -58,9 +62,14 @@ const LoginForm = () => {
       />
       </h3>
 
-      <label>
+      {/* <label>
         <h3 align="center"> Password </h3>
-      </label>
+      </label> */}
+      <br />
+
+      <label><h3><b>Password</b></h3></label>
+      <br />
+      <br />
       <h3 align="center">
       <input
         type="Password"
@@ -71,10 +80,11 @@ const LoginForm = () => {
         onChange={(e) => ChangeValue(e)}
         />
         </h3>
+        <br />
         <div align="center">
             <button onClick={() => LoginData()} className="btn btn-primary">Login</button>
         </div>
-
+        </h4>
     </div>
   );
 };

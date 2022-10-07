@@ -51,11 +51,11 @@ const UpdateForm = ({ single, Function }) => {
 
   return (
     <div>
-      <h1 align="center" >Update Form</h1>
+      <h1 align="center" ><b>Update Form</b></h1>
       <br />
       <h4 align="center">
       <br />
-      <label >Userid</label>
+      <label ><b>Userid</b></label>
       <br />
       <input
         type="Userid"
@@ -66,7 +66,7 @@ const UpdateForm = ({ single, Function }) => {
       <br />
 
       <br />
-      <label>Fname</label>
+      <label><b>Fname</b></label>
       <br />
       <input
         type="Fname"
