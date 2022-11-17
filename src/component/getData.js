@@ -12,7 +12,7 @@ const GetData = () => {
   }, []);
 
   function getUser() {
-    let user = localStorage.getItem("token");
+    let user = localStorage.getItem("token"); 
 
     axios
       .get("http://localhost:4000/enterData/getdata", {
